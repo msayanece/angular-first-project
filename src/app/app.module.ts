@@ -7,6 +7,7 @@ import { DateComponent } from './date/date.component';
 import { ForIfComponent } from './for-if/for-if.component';
 import { NgoninitPassingParamComponent } from './ngoninit-passing-param/ngoninit-passing-param.component';
 import { ObjectInputComponent } from './object-input/object-input.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ObjectInputComponent } from './object-input/object-input.component';
     DateComponent,
     ForIfComponent,
     NgoninitPassingParamComponent,
-    ObjectInputComponent
+    ObjectInputComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule
