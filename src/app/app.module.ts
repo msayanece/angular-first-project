@@ -9,6 +9,7 @@ import { NgoninitPassingParamComponent } from './ngoninit-passing-param/ngoninit
 import { ObjectInputComponent } from './object-input/object-input.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { LogService } from './log.service';
+import { ButtonClickComponent } from './button-click/button-click.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LogService } from './log.service';
     ForIfComponent,
     NgoninitPassingParamComponent,
     ObjectInputComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    ButtonClickComponent
   ],
   imports: [
     BrowserModule
