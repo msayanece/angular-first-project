@@ -8,6 +8,7 @@ import { ForIfComponent } from './for-if/for-if.component';
 import { NgoninitPassingParamComponent } from './ngoninit-passing-param/ngoninit-passing-param.component';
 import { ObjectInputComponent } from './object-input/object-input.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { LogService } from './log.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
