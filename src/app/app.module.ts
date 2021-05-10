@@ -10,6 +10,8 @@ import { ObjectInputComponent } from './object-input/object-input.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { LogService } from './log.service';
 import { ButtonClickComponent } from './button-click/button-click.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,11 @@ import { ButtonClickComponent } from './button-click/button-click.component';
     NgoninitPassingParamComponent,
     ObjectInputComponent,
     LifeCycleComponent,
-    ButtonClickComponent
+    ButtonClickComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [LogService],
   bootstrap: [AppComponent]
