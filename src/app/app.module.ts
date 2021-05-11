@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
@@ -13,6 +14,7 @@ import { ButtonClickComponent } from './button-click/button-click.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { OtherModule } from './other/other.module';
+import { HttpCallComponent } from './http-call/http-call.component';
 
 @NgModule({
   declarations: [
@@ -24,10 +26,11 @@ import { OtherModule } from './other/other.module';
     ObjectInputComponent,
     LifeCycleComponent,
     ButtonClickComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    HttpCallComponent
   ],
   imports: [
-    BrowserModule, FormsModule, OtherModule
+    BrowserModule, FormsModule, OtherModule, HttpClientModule
   ],
   providers: [LogService],
   bootstrap: [AppComponent]

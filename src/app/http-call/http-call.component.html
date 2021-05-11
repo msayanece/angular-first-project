@@ -1,0 +1,14 @@
+<p>http-call works!</p>
+<p></p>
+<input type="text" [(ngModel)]="userName">
+<button (click)="onClickSearch()">Search</button>
+<div *ngIf="response">
+  <p></p>
+  <p>Username: {{response.login}}</p>
+  Image: <img [src]="response.avatar_url">
+  <p></p>
+  <p>Name: {{response.name}}</p>
+  <p>Bio: {{response.bio}}</p>
+  <p>No. of repositories: {{response.public_repos }}</p>
+  <p>No. of followers: {{response.followers}}</p>
+</div>
